@@ -1,0 +1,12 @@
+mainmenu "HTTP2 server sample application"
+
+config NET_HTTP_SERVICE
+	bool "Enable http service"
+	default y
+
+config NET_HTTP_SERVER_SERVICE_PORT
+	int "Port number for http service"
+	default 80
+  depends on NET_HTTP_SERVICE
+
+source "Kconfig.zephyr"
