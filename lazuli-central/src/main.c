@@ -14,8 +14,11 @@
 #include <zephyr/sys/util_macro.h>
 
 #include <zephyr/net/net_config.h>
+#include <zephyr/net/hostname.h>
+#include <zephyr/net/net_stats.h>
 
 #include <zephyr/logging/log.h>
+
 LOG_MODULE_REGISTER(net_http_server_sample, LOG_LEVEL_DBG);
 
 // HTTPS structures
